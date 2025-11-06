@@ -1,6 +1,8 @@
 # MockLocation
 Mock Location is a powerful and easy-to-use mock location app that lets you set your GPS to anywhere in the India with a single tap. Perfect for protecting your privacy on social media, testing location-based apps, playing AR games, or planning your next trip. Take full control of your device's location data.
 
+NOTE : To run this project, you need to add your Google Maps API key to the local.properties file.
+
 Step-by-Step Guide to Using a Mock Location App
 Part 1: Initial Setup (Enable Developer Options)
 This is a one-time setup required for all mock location apps on Android.
