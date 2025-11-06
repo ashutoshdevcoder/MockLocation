@@ -1,0 +1,97 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-android'
+
+}
+
+android {
+    namespace 'com.ashdev.mocklocation'
+    compileSdk 36
+    testBuildType "debugStaging"
+
+    defaultConfig {
+        applicationId "com.ashdev.mocklocation"
+        minSdk 23
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            // todo: keep true to check obfuscation related issues
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable true  // todo: disable for secured sharing of test build
+        }
+        create("debugStaging") {
+            initWith(getByName("debug"))
+            applicationIdSuffix = ".staging"
+        }
+        create("releaseStaging") {
+            initWith(getByName("release"))
+            applicationIdSuffix = ".staging"
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.17.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.13.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'com.google.android.gms:play-services-base:18.9.0'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation 'com.google.android.gms:play-services-maps:19.2.0'
+    implementation 'com.google.android.gms:play-services-places:17.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+    implementation 'com.google.maps.android:android-maps-utils:3.19.0'
+    implementation 'androidx.work:work-runtime-ktx:2.11.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'com.google.dagger:hilt-android:2.57.2'
+    kapt 'com.google.dagger:hilt-compiler:2.57.2'
+
+    // For instrumentation tests
+    androidTestImplementation  'com.google.dagger:hilt-android-testing:2.57.2'
+    kaptAndroidTest 'com.google.dagger:hilt-compiler:2.57.2'
+
+    // For local unit tests
+    testImplementation 'com.google.dagger:hilt-android-testing:2.57.2'
+    kaptTest 'com.google.dagger:hilt-compiler:2.57.2'
+
+    // Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:34.5.0')
+    implementation 'androidx.security:security-crypto-ktx:1.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
+}

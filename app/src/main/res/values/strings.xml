@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Mock Location</string>
+    <string name="oh_uh">OH UH</string>
+    <string name="we_could_not_found_anything">We could not found anything</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="ApplyMockBroadRec_MockNotApplied">"Mocked location not applied. You must enable mock location in developer settings. Service stopped."</string>
+    <string name="ApplyMockBroadRec_Closed">Fake Traveler was closed. Mock location stopped.</string>
+    <string name="MainActivity_NoLatLong">No lat or lng value. Long press in the map where you want to be located</string>
+    <string name="MainActivity_MockApplied">Mocked location applied.</string>
+    <string name="MainActivity_MockNotApplied">"Mocked location not applied. You must enable mock location in developer settings"</string>
+    <string name="MainActivity_MockLocRunning">Mocking location service running.</string>
+    <string name="MainActivity_MockStopped">Mocking stopped</string>
+    <string name="stop">Stop</string>
+    <string name="please_enter_mock_address">Please enter correct mock location</string>
+    <string name="unable_to_find_lat_lng">Unable to find this location</string>
+    <string name="search_address_here">Enter location name here</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="dialog_permission_title">Please allow location permission</string>
+    <string name="go_to_settings">Go to setting</string>
+    <string name="location_permission_message">Please allow location permission</string>
+
+</resources>
