@@ -135,8 +135,10 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             mockLocationService?.let {
                 stopService(mockLocationService)
                 mockLocationService=null
+                binding.btnSelect.isEnabled = false
                 binding.btnRemove.isEnabled = false
                 binding.btnRemove.visibility = View.GONE
+                isCurrentLocationSet = false
             }
         }
     }

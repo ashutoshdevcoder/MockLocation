@@ -153,7 +153,7 @@ class MockLocationService:Service() {
             setStyle(bigText)
             setOngoing(true)
             addAction(openAction)
-            addAction(stopAction)
+            //addAction(stopAction)
         }
 
         val mNotificationManager = applicationContext.getSystemService(AppCompatActivity.NOTIFICATION_SERVICE) as NotificationManager
