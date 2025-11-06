@@ -57,9 +57,5 @@ Open any other app that uses your location (like a social media app to check-in)
 
 
 
-![Screenshot_2025-11-06-10-33-43-93_67f3af6dee8a206f5374452eea8d8de9](https://github.com/user-attachments/assets/71091a25-80fc-42d5-a6b1-03ab0c301955)
-![Screenshot_2025-11-06-10-33-50-43_67f3af6dee8a206f5374452eea8d8de9](https://github.com/user-attachments/assets/362d4ad7-e40d-4da8-8fd0-23cc500c814f)
-![Screenshot_2025-11-06-10-34-20-98_67f3af6dee8a206f5374452eea8d8de9](https://github.com/user-attachments/assets/3984a9c8-c835-4add-94db-023b77978bf5)
-![Screenshot_2025-11-06-10-34-14-78_67f3af6dee8a206f5374452eea8d8de9](https://github.com/user-attachments/assets/4dc8b70d-f1f1-451e-8d1d-8918114e2f3f)
-![Screenshot_2025-11-06-10-34-02-32_67f3af6dee8a206f5374452eea8d8de9](https://github.com/user-attachments/assets/22d85c9d-72af-4a4f-a0e6-3270e48173a7)
+
 
